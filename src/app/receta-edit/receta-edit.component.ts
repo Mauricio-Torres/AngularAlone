@@ -24,7 +24,8 @@ export class RecetaEditComponent implements OnInit {
     const cantidadIngrediente = this.cantidadInput.nativeElement.value;
 
     const newIngrediente = new Ingredientes(nameIngrediente, cantidadIngrediente);
-    console.log(newIngrediente);
+
+    console.log('nuevos ingredientes ... ', newIngrediente);
 
     this.shopinListService.addIngredientes(newIngrediente);
   }

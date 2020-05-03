@@ -16,6 +16,10 @@ import { ShopinListService } from './shopping-list/shopin-list.service';
 import { SizeDirective } from './directivas/size.directive';
 import { ChangeColorDirective } from './directivas/changeColor.directive';
 import { MyNavigateRouterModule } from './routing/my-navigate-router.module';
+import { RecetaResolvedService } from './services/recetaResolved.service';
+import { RecetaService } from './receta/receta.service';
+import { ResetaStartComponent } from './receta/reseta-start/reseta-start.component';
+import { RecetaCEditComponent } from './receta/receta-edit/receta-edit.component';
 
 @NgModule({
   declarations: [
@@ -29,15 +33,16 @@ import { MyNavigateRouterModule } from './routing/my-navigate-router.module';
     RecetaEditComponent,
     DropdownDirective,
     SizeDirective,
-    ChangeColorDirective
+    ChangeColorDirective,
+    ResetaStartComponent,
+    RecetaCEditComponent
 
     ],
   imports: [
     BrowserModule,
     MyNavigateRouterModule,
-    // AppRoutingModule
   ],
-  providers: [ShopinListService],
+  providers: [ShopinListService, RecetaResolvedService, RecetaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

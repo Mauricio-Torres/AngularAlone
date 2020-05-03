@@ -1,13 +1,14 @@
 
  <div class = "row">
     <div class = "col-xs-12">
-        <button class = "btn btn-success">Nuevas recetas</button>
+        <button class = "btn btn-success" (click) = "onNewReceta()" >Nuevas recetas</button>
     </div>
  </div>
  <hr>
   <div class = "row">
     <div class = "col-xs-12">
-        <app-receta-item  *ngFor="let item of recetas" [receta] = "item">
+        <app-receta-item
+         *ngFor="let item of recetas" [receta] = "item">
         </app-receta-item>
     </div>
  </div>
