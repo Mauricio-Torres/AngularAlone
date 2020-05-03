@@ -13,6 +13,9 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecetaEditComponent } from './receta-edit/receta-edit.component';
 import { DropdownDirective } from './directivas/dropdown.directive';
 import { ShopinListService } from './shopping-list/shopin-list.service';
+import { SizeDirective } from './directivas/size.directive';
+import { ChangeColorDirective } from './directivas/changeColor.directive';
+import { MyNavigateRouterModule } from './routing/my-navigate-router.module';
 
 @NgModule({
   declarations: [
@@ -24,12 +27,15 @@ import { ShopinListService } from './shopping-list/shopin-list.service';
     RecetaDetalleComponent,
     ShoppingListComponent,
     RecetaEditComponent,
-    DropdownDirective
+    DropdownDirective,
+    SizeDirective,
+    ChangeColorDirective
 
     ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MyNavigateRouterModule,
+    // AppRoutingModule
   ],
   providers: [ShopinListService],
   bootstrap: [AppComponent]

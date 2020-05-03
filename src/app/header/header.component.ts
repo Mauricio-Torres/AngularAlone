@@ -18,5 +18,13 @@ export class HeaderComponent implements OnInit {
   }
   ngOnInit() {
   }
+  /*
+   onResize(event: any)
+   {
+    console.log('size pag Alto ', event.currentTarget.innerHeight);
+    console.log('size pag Ancho ', event.currentTarget.innerWidth);
+   }
+   */
+
 
 }
